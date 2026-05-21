@@ -13,17 +13,16 @@
   <a href="Jasohapche-Windows-v0.1.0.zip"><img alt="Download" src="https://img.shields.io/badge/download-v0.1.0-22C55E?style=flat-square"></a>
   <a href="https://dotnet.microsoft.com/download/dotnet/8.0"><img alt=".NET 8 Desktop Runtime" src="https://img.shields.io/badge/.NET%20Desktop%20Runtime-8.0-512BD4?style=flat-square&logo=dotnet&logoColor=white"></a>
   <a href="https://www.microsoft.com/windows/windows-11"><img alt="Windows" src="https://img.shields.io/badge/platform-Windows%2010%2F11-0078D4?style=flat-square&logo=windows11&logoColor=white"></a>
-  <a href="https://github.com/yelixir-dev/jasohapche-windows"><img alt="Source" src="https://img.shields.io/badge/source-jasohapche--windows-8B5CF6?style=flat-square"></a>
 </p>
 
 ---
 
 ## 이 저장소는 무엇인가요?
 
-이 저장소는 **자소합체 Windows v0.1.0 실행 배포본**을 바로 내려받기 위한 저장소입니다. 개발 소스, 빌드 스크립트, 테스트 코드는 [`yelixir-dev/jasohapche-windows`](https://github.com/yelixir-dev/jasohapche-windows)에 있습니다.
+이 저장소는 **자소합체 Windows v0.1.0 실행 배포본**을 바로 내려받기 위한 저장소입니다. 사용자가 압축을 풀고 바로 실행할 수 있도록 필요한 실행 파일과 런타임 자산만 담았습니다.
 
 ```text
-한글.txt  →  한글.txt
+ㅎㅏㄴㄱㅡㄹ.txt  >  한글.txt
 ```
 
 ## 화면 미리보기 (Screenshots)
@@ -32,7 +31,7 @@
   <img src="docs/assets/readme/dashboard.png" alt="자소합체 Windows WPF 대시보드 미리보기" width="860">
 </p>
 
-> 위 이미지는 소스 저장소의 구현된 WPF 대시보드 미리보기입니다. 이 배포 저장소에는 실행 파일과 런타임 자산만 포함됩니다.
+> 위 이미지는 v0.1.0 앱의 WPF 대시보드 미리보기입니다. 이 배포 저장소에는 실행 파일과 런타임 자산만 포함됩니다.
 
 ## 바로 다운로드
 
@@ -44,7 +43,6 @@
 | 대상 런타임 | `.NET 8 / win-x64` |
 | 필요 환경 | Windows 10/11 + .NET 8 Desktop Runtime |
 | 패키지 안내 | [`v0.1.0/README.md`](v0.1.0/README.md) |
-| 개발 저장소 | [`yelixir-dev/jasohapche-windows`](https://github.com/yelixir-dev/jasohapche-windows) |
 
 ## 빠른 실행
 
@@ -153,14 +151,11 @@ Get-FileHash .\Jasohapche-Windows-v0.1.0.zip -Algorithm SHA256
 - 민감한 파일명이나 개인 경로가 포함된 로그는 공개적으로 공유하지 마세요.
 - Windows 파일 시스템 동작은 Windows 환경에서 최종 확인하는 것을 권장합니다.
 
-## 소스와 배포의 역할
+## 배포 메모
 
-| 저장소 | 역할 |
-| --- | --- |
-| [`jasohapche-windows-app`](https://github.com/yelixir-dev/jasohapche-windows-app) | 사용자가 바로 받는 실행 배포본 |
-| [`jasohapche-windows`](https://github.com/yelixir-dev/jasohapche-windows) | WPF 소스, 빌드/테스트, 배포 스크립트, 디자인 자산 |
-
-소스 저장소의 최신 배포 규칙은 `dist/` 산출물을 기준으로 관리됩니다. 이 저장소의 README는 현재 GitHub에 올라온 v0.1.0 패키지의 실제 파일명과 경로를 기준으로 안내합니다.
+- 이 저장소는 사용자 다운로드용 실행 배포본입니다.
+- `v0.1.0/` 폴더 전체를 함께 보관해야 실행 파일과 아이콘 자산이 정상적으로 동작합니다.
+- 이 README는 현재 GitHub에 올라온 v0.1.0 패키지의 실제 파일명과 경로를 기준으로 안내합니다.
 
 ## 라이선스
 
